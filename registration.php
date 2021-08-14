@@ -114,11 +114,13 @@
         <label for="firstname">Enter your first name:<span style="color:red;" >*</span> </label>
         <input type="text" id="firstname" name="firstname">
         <span style="color:red;"><?php echo $firstnameerror;?></span>
+        <span id="firstnameerr"></span>
         <br>
 
         <label for="lastname">Enter your last name:<span style="color:red;">*</span></label>
         <input type="text" id="lastname" name="lastname">
         <span style="color:red;"><?php echo $lastnameerror?></span>
+        <span id="lastnameerr"></span>
         <br>
 
         <label for="gender">Gender <span style="color: red;">*</span></label>
@@ -127,11 +129,13 @@
         <input type="radio" id="female" name="gender" value="Female">
         <label for="female">Female</label>
         <span style="color: red;"><?php echo $gendererror?></span>
+        <span id="gendererr"></span>
         <br>
 
         <label for="dob">Date of Birth:<span style="color: red;">*</span> </label>
         <input type="date" id="dob" name="dob">
         <span style="color: red;"><?php echo $doberror ?> </span>
+        <span id="doberr"></span>
         <br>
 
         <label for="religion">Enter your Religion: <span style="color: red;"> *</span> </label>
@@ -142,6 +146,7 @@
            <option value="chritian">Christian</option>
         </select>
         <span style="color: red;"><? php echo $religionerror?></span>
+        <span id="religionerr"></span>
       </fieldset>
         <br>
 
@@ -160,11 +165,13 @@
         <label for="tel">Telephone:<span style="color: red;">*</span> </label>
         <input type="tel" id="tel" name="tel">
         <span style="color: red;"><? php echo $telerror?></span>
+        <span id="telerr"></span>
         <br>
 
         <label for="email">Email: <span style="color: red;">*</span></label>
         <input type="email" id="email" name="email">
         <span style="color: red;"><?php echo $emailerror?></span>
+        <span id="emailerr"></span>
         <br>
 
         <label for="link">Personal Website Link:<span style="color: red;">*</span></label>
@@ -182,10 +189,12 @@
       <label for="username">Enter username <span style="color: red;">*</span></label>
       <input type="text" id="username" name="username">
       <span style="color: red;"><?php echo $usernameerror?></span>
+      <span id="usernameerr"></span>
       <br>
       <label for="password">Enter password: <span style="color: red;">*</span></label>
       <input type="password" name="password">
       <span style="color: red;"><?php echo $passworderror?></span>
+      <span id="passworderr"></span>
       <br>
 
       <input type="submit" value= "submit">
